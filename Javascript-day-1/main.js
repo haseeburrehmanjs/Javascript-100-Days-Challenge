@@ -27,21 +27,3 @@ longestWords('watch thapa technical javascript course on youtube')
 
 
 
-// let longestWord = (array) => {
-//     // console.log(array);
-//     if(array.length === 0 || array.trim().length === 0){
-//         return false
-//     }
-
-//     word = array.split(' ')
-//     // console.log(word);
-
-//     word = word.sort((a, b) => {
-//         return a.length - b.lenght
-//     })
-//     console.log(word[0]);
-
-// }
-
-// longestWord('haseeburrehmanjs khan ha to bhai pagal-youtuber')
-

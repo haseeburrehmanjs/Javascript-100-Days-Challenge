@@ -10,34 +10,17 @@
 //* Write a function generateHash to accomplish this task.
 
 //o/p="#HaseebUrRehmanjs"
-
-
-let h2 = document.querySelector('h2')
-let input = document.querySelector('#hastTage')
-let form = document.querySelector('form')
-
-form.addEventListener('submit', event => {
-    event.preventDefault()
-
-    let generateHash = (str) => {
-        // console.log(str);
-        if(str.length > 280 || str.trim().length === 0){
-            return false
-        }
     
-        str = str.split(' ')
-        // console.log(str);
-        str = str.map((item) => {
-            return item.replace(item[0], item[0].toUpperCase())
-        })
-        console.log(str);
-        str = `#${str.join('')}`
-        h2.innerHTML = str
-        
-    }
-    generateHash(input.value);
+let generateHash = (word) => {
+    word = word.split(' ')
+    // console.log(word);
 
-    input.value = ''
-})
+    word = word.map(item => {
+        return item.replace(item[0], item[0].toUpperCase())
+    })
+    // console.log(word);
+    word = `#${word.join('')}`
+    return word
+}
 
-    
+console.log(generateHash('haseeb ur rehman js'));
