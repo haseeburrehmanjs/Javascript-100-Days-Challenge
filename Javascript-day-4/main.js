@@ -15,11 +15,25 @@ let checkTriangleType = (a, b, c) => {
 
     if (a === b && b === c) {
         console.log('this is equilateral');
-    } else if (a === b || a === c){
+    } else if (a === b || a === c || b === c){
         console.log('this is isosceles');
     }else {
         console.log('this is scalene');
     }
 }
 
-checkTriangleType(3, 3, 3)
+checkTriangleType(1, 2, 3)
+
+
+// let checkTrianleType = (a, b, c)=> {
+//     if(a === b && b === c){
+//         console.log('3no baraber hain');
+//     }else if (a === b || a === c){
+//         console.log('do cona baraber hain');
+//     }else {
+//         console.log('ak bhi baraber nahi ha!');
+//     }
+// }
+
+// console.log(checkTrianleType(1,2,2));
+
