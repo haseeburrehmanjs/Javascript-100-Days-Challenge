@@ -5,12 +5,10 @@
 // Example usage:
 //console.log(sortAscending([5, 3, 1, 8])); // Output: [1, 3, 5, 8] console.log(sortAscending([5, 3, 1, 8]));; // Output: [3, 5, 8, 10] console.log(typeof sortAscending[2]);
 
-
-let sortAscending = (a, b, c) => {
-    checkMaxNumber = 
+let sortAscending = (arry) => {
+    return arry.sort((a, b) => a - b)
 }
 
-console.log(sortAscending([5, 3, 1, 8]));
 console.log(sortAscending([5, 3, 1, 8]));
 
 
