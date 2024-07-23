@@ -1,6 +1,7 @@
 // Write a function to determine whether a given string is a palindrome or not. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward, ignoring spaces, punctuation, and capitalization.
 
 
+
 // let isPalindrome = (str) => {
 //     str = str.toLowerCase().replace(/\W/g, '')
 //     let r_str = str.split('').reverse().join("")
@@ -8,12 +9,19 @@
 //     return str === r_str ? true : false
 // }
 
+// let isPalindrome = (str) => {
+//     str = str.toLowerCase().replace(/\W/g, '')
+//     let r_str = str.split('').reverse().join('')
+//     console.log(r_str);
+//     return str === r_str ? true : false
+
+// }
+
 let isPalindrome = (str) => {
     str = str.toLowerCase().replace(/\W/g, '')
     let r_str = str.split('').reverse().join('')
     console.log(r_str);
     return str === r_str ? true : false
-
 }
 
 console.log(isPalindrome('Racecar'));
