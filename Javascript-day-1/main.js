@@ -13,17 +13,27 @@
 
 
 
-let longestWords = (array) => {
-    words = array.split(' ')
+// let longestWords = (array) => {
+//     words = array.split(' ')
 
-    words = words.sort((a, b) => {
+//     words = words.sort((a, b) => {
+//         return b.length - a.length
+//     })
+//     console.log(words);
+//     console.log(words[0]);
+// }
+
+// longestWords('watch thapa technical javascript course on youtube')
+
+
+function longestWords(array) {
+    array = array.split(' ')
+    array  = array.sort((a, b) => {
         return b.length - a.length
     })
-    console.log(words);
-    console.log(words[0]);
+    console.log(array[0]);
 }
 
 longestWords('watch thapa technical javascript course on youtube')
-
 
 
