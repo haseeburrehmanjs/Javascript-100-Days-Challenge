@@ -11,16 +11,23 @@
 
 //o/p="#HaseebUrRehmanjs"
     
+// let generateHash = (word) => {
+//     word = word.split(' ')
+//     word = word.map(item => {
+//         return item.replace(item[0], item[0].toUpperCase())
+//     })
+//     return `#${word.join('')}`
+// }
+
+// console.log(generateHash('my name is haseeb ur rehman js'));
+
+
 let generateHash = (word) => {
     word = word.split(' ')
-    // console.log(word);
-
-    word = word.map(item => {
-        return item.replace(item[0], item[0].toUpperCase())
-    })
-    // console.log(word);
-    word = `#${word.join('')}`
-    return word
+    word = word.map(item => item.replace(item[0], item[0].toUpperCase()))
+    word = word.join('')
+    return `#${word}`
 }
 
-console.log(generateHash('haseeb ur rehman js'));
+console.log(generateHash('my name is haseeb ur rehman js'));
+
