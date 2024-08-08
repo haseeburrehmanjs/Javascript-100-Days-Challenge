@@ -9,20 +9,20 @@
 //? The character parameter can be any printable ASCII character (the function sho accept any character that is part of the ASCII character set and is printable).
 
 
-let countChar = (word, char) => {
-    word = word.toLowerCase()
-    char = char.toLowerCase()
+// let countChar = (word, char) => {
+//     word = word.toLowerCase()
+//     char = char.toLowerCase()
 
-    totalChar = word.split('').reduce((accum, currvalue) => {
-        if (currvalue === char) {
-            accum++
-        }
-        return accum
-    }, 0)
-    return totalChar
-}
+//     totalChar = word.split('').reduce((accum, currvalue) => {
+//         if (currvalue === char) {
+//             accum++
+//         }
+//         return accum
+//     }, 0)
+//     return totalChar
+// }
 
-console.log(countChar('haseeb ur rehman', 'h'));
+// console.log(countChar('haseeb ur rehman', 'h'));
 
 
 // 2nd try
@@ -60,3 +60,20 @@ console.log(countChar('haseeb ur rehman', 'h'));
 // }
 
 // console.log(countChar('haseeburrehmanjs', 'e'));
+
+// 4rth try
+let countChar = (word, char) => {
+    word = word.toUpperCase()
+    char = char.toUpperCase()
+
+    totalCur = word.split('').reduce((accum, curVal)=> {
+        if(curVal === char){
+            accum++
+        }
+        return accum
+    }, 0)
+    return totalCur
+}
+
+console.log(countChar('haseeb ur rehman js', 'e'));
+
