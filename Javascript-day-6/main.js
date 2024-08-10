@@ -17,16 +17,27 @@
 
 // }
 
+// let isPalindrome = (str) => {
+//     str = str.toLowerCase().replace(/\W/g, '')
+//     let r_str = str.split('').reverse().join('')
+//     console.log(r_str);
+//     return str === r_str ? true : false
+// }
+
+// console.log(isPalindrome('Racecar'));
+// console.log(isPalindrome('hello'));
+// console.log(isPalindrome('A man, a plan, a canal, Panama'));
+
 let isPalindrome = (str) => {
-    str = str.toLowerCase().replace(/\W/g, '')
+    str = str.toUpperCase('').replace(/\W/g,'')
     let r_str = str.split('').reverse().join('')
     console.log(r_str);
     return str === r_str ? true : false
 }
-
-console.log(isPalindrome('Racecar'));
+console.log(isPalindrome('racecar'));
 console.log(isPalindrome('hello'));
 console.log(isPalindrome('A man, a plan, a canal, Panama'));
+
 
 //---------------------------------------------------
 // ====================Constraints===================
