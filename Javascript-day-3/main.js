@@ -62,18 +62,38 @@
 // console.log(countChar('haseeburrehmanjs', 'e'));
 
 // 4rth try
-let countChar = (word, char) => {
-    word = word.toUpperCase()
-    char = char.toUpperCase()
+// let countChar = (word, char) => {
+//     word = word.toUpperCase()
+//     char = char.toUpperCase()
 
-    totalCur = word.split('').reduce((accum, curVal)=> {
-        if(curVal === char){
-            accum++
-        }
-        return accum
-    }, 0)
-    return totalCur
-}
+//     totalCur = word.split('').reduce((accum, curVal)=> {
+//         if(curVal === char){
+//             accum++
+//         }
+//         return accum
+//     }, 0)
+//     return totalCur
+// }
 
-console.log(countChar('haseeb ur rehman js', 'e'));
+// console.log(countChar('haseeb ur rehman js', 'e'));
+
+
+// 5th try
+// let countChar = (word, char) => {
+//     word = word.toUpperCase()
+//     char = char.toUpperCase()
+
+//     totalChar = word.split('').reduce((accum, curValue) => {
+//         if(curValue === char){
+//             accum++
+//         }
+//         return accum
+//     }, 0)
+//     return totalChar
+// }
+
+// console.log(countChar('haseeb ur rehman js', 'e'));
+
+
+
 
