@@ -26,14 +26,36 @@
 // longestWords('watch thapa technical javascript course on youtube')
 
 
-function longestWords(array){
+// function longestWords(array){
+//     array = array.split(' ')
+//     array = array.sort((a, b)=> {
+//         return b.length - a.length
+//     })
+//     console.log(array[0]); 
+// }
+
+// longestWords('watch thapa technical javascript course on youtube')
+
+
+// function longestWords(array){
+//     array = array.split(' ')
+//     array = array.sort((a,b) => {
+//         return b.length - a.length
+//     })
+//     console.log(array);
+
+// }
+
+// longestWords('watch thapa technical javascript course on youtube')
+
+
+
+function findLongestWord(array) {
     array = array.split(' ')
-    array = array.sort((a, b)=> {
+    array = array.sort((a, b) => {
         return b.length - a.length
     })
-    console.log(array[0]); 
+    console.log(array[0]);
 }
 
-longestWords('watch thapa technical javascript course on youtube')
-
-
+findLongestWord('watch thapa technical javascript course on youtube')
